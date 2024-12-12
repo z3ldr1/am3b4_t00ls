@@ -4,9 +4,12 @@ Ameba e uma criação de uma solução minha para bug bounty, ela e uma ferramen
 USO APENAS PARA O KALI-LINUX!!
 
 Modo de instalação:
-$ sudo su
-# git clone https://github.com/AlbedoPrime/am3b4_t00ls.git && cd am3b4_t00ls && chmod +x requeriments.sh && chmod +x am3b4_t00ls.sh && ./requeriments.sh && ./am3b4_t00ls.sh
+
+$sudo su
+
+#git clone https://github.com/AlbedoPrime/am3b4_t00ls.git && cd am3b4_t00ls && chmod +x requeriments.sh && chmod +x am3b4_t00ls.sh && ./requeriments.sh && ./am3b4_t00ls.sh
 
 Modo de uso:
 $ sudo su
-# ./am3b4_t00ls.sh
+
+#./am3b4_t00ls.sh
