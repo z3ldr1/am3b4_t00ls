@@ -53,12 +53,12 @@ echo "[**Nmap Finalizado**]
 "
 
 echo "Iniciando nuclei paramsider!"
-sudo nf -d "$https-url" > "$Caminho_do_diretorio"/nf-vuns.txt
+sudo nf -d "$https_url" > "$Caminho_do_diretorio"/nf-vuns.txt
 echo "[**Nuclei paramsider finalizado**]
 "
 
 echo "Iniciando whatweb!"
-sudo whatweb -a3 "$https_url" > "$diretorio/services.txt"
+sudo whatweb -a3 "$url" > "$diretorio/services.txt"
 echo " [**Whatweb finalizado**]
 "
 
@@ -72,7 +72,7 @@ echo " [**whois Finalizado**]
 "
 
 echo "Iniciando nikto!"
-sudo nikto -url "$url" -C all > "$diretorio/scan-nikto.txt"
+sudo nikto -url "$https_url" -C all > "$diretorio/scan-nikto.txt"
 echo " [**Nikto finalizado**]
 "
 
