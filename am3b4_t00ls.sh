@@ -3,13 +3,13 @@
 echo "
  -- ## Automatic Scanner for BugBounty - Desenvolvido por z3ldr1s ## --
 
-              zzzzzzzzzzzzzzz               |  Ferramenta de automatização de scanner para pentest!
-                           z                |  Desenvolvido por: z3ldr1s
-                          z                 |
-                         z                  |
-                        z                   |
-                       z                    |
-                      zzzzzzzzzzzzzz        |  Dependências: nmap, whatweb, nuclei, nikto, wget, subfinder, httpx, wpscan, gobuster, wordlists, whois!
+               zzzzzzzzzzzzzzz               |  Ferramenta de automatização de scanner para pentest!
+                            z                |  Desenvolvido por: z3ldr1s
+                           z                 |
+                          z                  |
+                         z                   |
+                        z                    |
+                       zzzzzzzzzzzzzz        |  Dependências: nmap, whatweb, nuclei, nikto, wget, subfinder, httpx, wpscan, gobuster, wordlists, whois!
 
 
         Am3b4 t00l
