@@ -29,6 +29,16 @@ read -p "Sua API do WPScan: " api
 read -p "Qual a URL completa do site (ex: https://example.com)?: " https_url
 read -p "Domínio para o escaneamento (ex: example.com): " url
 
+# Subdomínios
+read -p "Deseja buscar por subdomínios antes do scan? [S/N]: " resposta_sub
+if [[ "$resposta_sub" =~ ^[Ss]$ ]]; then
+  echo "Buscando subdomínios com dnsrato..."
+  dnsrato "$url" /usr/share/wordlists/dnsrato/rato.txt > "$diretorio/subdomains.txt"
+  echo "[**Busca de subdomínios concluída**]"
+else
+  echo "[**Busca de subdomínios ignorada**]"
+fi
+
 echo "Scaneando, aguarde!"
 
 # Nmap
@@ -72,8 +82,8 @@ touch "$diretorio/info.txt"
 echo "Arquivo info.txt criado com sucesso!"
 
 # Scan do WordPress
-read -p "Deseja fazer scan do WordPress (caso exista)? [S/N]: " resposta
-if [[ "$resposta" =~ ^[Ss]$ ]]; then
+read -p "Deseja fazer scan do WordPress (caso exista)? [S/N]: " resposta_wp
+if [[ "$resposta_wp" =~ ^[Ss]$ ]]; then
   wpscan --url "$url" --force -e vp,vt,tt,cb,dbe,u,m --rua --api-token "$api" > "$diretorio/wp-scan.txt"
   echo "[**Scan do WordPress concluído**]"
 else
@@ -81,8 +91,8 @@ else
 fi
 
 # Download do site
-read -p "Deseja fazer download do site para análise? [S/N]: " resposta2
-if [[ "$resposta2" =~ ^[Ss]$ ]]; then
+read -p "Deseja fazer download do site para análise? [S/N]: " resposta_download
+if [[ "$resposta_download" =~ ^[Ss]$ ]]; then
   wget -m "$https_url" -P "$diretorio/site-mirror"
   echo "[**Download do site concluído**]"
 else
