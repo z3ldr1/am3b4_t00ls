@@ -33,7 +33,7 @@ echo "Scaneando, aguarde!"
 
 # Nmap
 echo "Iniciando nmap!"
-sudo nmap -vv -sS -p-65535 -A -sV -Pn -T5 --script=all -g 53 -O --min-rate=450 -oN "$diretorio/scan-nmap.txt" "$url"
+sudo nmap -vv -sS -p-65535 -A -sV -Pn -T5 --script=all -g 53 -O --min-rate=450 -e -oN "$diretorio/scan-nmap.txt" "$url"
 echo "[**Nmap Finalizado**]"
 
 # Nuclei Paramsider
