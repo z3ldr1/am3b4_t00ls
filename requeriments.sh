@@ -11,6 +11,9 @@ ngrok="curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
 	| sudo tee /etc/apt/sources.list.d/ngrok.list \
 	&& sudo apt update \
 	&& sudo apt install ngrok"
+ m="curl -O "https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.10.0.jar" > apktool.jar && chmod +x apktool.jar
+mv apktool.jar /usr/local/bin && curl -O "https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool" > apktool
+chmod +x apktool && mv apktool /usr/local/bin"
 
 echo "[**Atualizando arquivos...**]"
 $up
@@ -55,15 +58,20 @@ $c
 #Instalando uro
 echo "[**Fazendo o donwload do uro.**]"
 $p uro $b
+echo "[**Download do uro finalizado!**]"
 echo "[**Fazendo download de ferramentas de Phishing**]"
 $p maxphisher $b
 $p colorama $b
 $p sockets $b
 $p requests $b
+echo "[**Baixando Ngrok...**]"
 $ngrok 
-echo "[**Download do uro finalizado!**] "
+echo "[**Download do Ngrok Concluido com Sucesso!!**]"
+echo "[**Baixando ApkTool para funcionamento do Metasploit!!**]"
+$m
+echo "[**Dependencias baixadas com sucesso**]"
 $c
-$p 
+
 # Clonando repositório NucleiFuzzer e executando instalação
 if [ ! -d "NucleiFuzzer" ]; then
   sudo git clone https://github.com/0xKayala/NucleiFuzzer.git
