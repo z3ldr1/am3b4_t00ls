@@ -30,7 +30,7 @@ echo "[**Baixando dependências do Ameba...**]
    sudo apt-get install  proxychains4 -y 
    sudo apt-get install  ettercap -y 
    sudo apt-get install  wget -y 
-  whois
+ sudo apt-get install  whois -y
 $c
 
 #Instalando uro
