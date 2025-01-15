@@ -2,7 +2,7 @@
 c="clear"
 echo " "
 echo "[**Atualizando arquivos...**]"
-sudo apt update -y && sudo apt full-upgrade -y
+sudo apt-get update -y && sudo apt-get full-upgrade -y
 echo " 
 [**Atualização completa**] 
 $c
@@ -59,4 +59,6 @@ echo "[**Dependências baixadas com sucesso**]"
 echo "
  
 "
+sudo apt-get update -y && sudo apt-get full-upgrade -y
+$c
 echo "[**A atualização foi concluída com sucesso**]"
