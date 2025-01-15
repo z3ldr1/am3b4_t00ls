@@ -5,7 +5,12 @@ i="sudo apt-get install "
 p="sudo pip3 install"
 up="sudo apt-get update -y && sudo apt-get full-upgrade -y"
 b="--break-system-package"
-
+ngrok="curl -sSL https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
+	| sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \
+	&& echo "deb https://ngrok-agent.s3.amazonaws.com buster main" \
+	| sudo tee /etc/apt/sources.list.d/ngrok.list \
+	&& sudo apt update \
+	&& sudo apt install ngrok"
 
 echo "[**Atualizando arquivos...**]"
 $up
@@ -55,7 +60,7 @@ $p maxphisher $b
 $p colorama $b
 $p sockets $b
 $p requests $b
-
+$ngrok 
 echo "[**Download do uro finalizado!**] "
 $c
 $p 
