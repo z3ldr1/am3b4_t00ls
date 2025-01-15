@@ -1,5 +1,8 @@
 #!/bin/bash
+#variaveis
 c="clear"
+
+
 echo " "
 echo "[**Atualizando arquivos...**]"
 sudo apt-get update -y && sudo apt-get full-upgrade -y
