@@ -15,23 +15,21 @@ echo "[**Baixando dependências do Ameba...**]
 "
 
 # Instalação de pacotes
-sudo apt install -y \
-  python2 \
-  python3 \
-  git \
-  nmap \
-  nikto \
-  whatweb \
-  nuclei \
-  subfinder \
-  gobuster \
-  python3 \
-  wpscan \
-  msfconsole \
-  sherlock \
-  proxychains4 \
-  ettercap \
-  wget \
+
+  sudo apt-ge install python2 -y 
+   sudo apt-get install python3 -y 
+     sudo apt-get install git -y 
+     sudo apt-get install nmap -y 
+    sudo apt-get install nikto -y 
+    sudo apt-get install whatweb -y 
+   sudo apt-get install  nuclei -y 
+   sudo apt-get install  subfinder -y 
+   sudo apt-get install  gobuster -y 
+    sudo apt-get install wpscan -y 
+   sudo apt-get install  sherlock -y 
+   sudo apt-get install  proxychains4 -y 
+   sudo apt-get install  ettercap -y 
+   sudo apt-get install  wget -y 
   whois
 $c
 
