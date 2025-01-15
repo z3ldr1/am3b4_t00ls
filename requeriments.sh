@@ -8,18 +8,17 @@ b="--break-system-package"
 
 echo "[**Atualizando arquivos...**]"
 $up
-echo " 
-[**Atualização completa**] 
+echo "[**Atualização completa**] "
 $c
-"
-echo "[**Baixando dependências do Ameba...**]
-
-"
+echo "[**Baixando dependências do Ameba...**]"
 
 # Instalação de pacotes
 $i python3-pip -y
+$i docker-cli -y
+$i apksigner -y
 $i python2 -y 
 $i python3 -y 
+$i golang-go -y
 $i git -y 
 $i nmap -y 
 $i nikto -y 
@@ -36,7 +35,10 @@ $i whois -y
 $i veil -y
 $i hashcat -y
 $i wordlists -y
-$i setoolkit -y
+$i set -y
+$i httpx -y
+$i pipx -y
+
 $c
 
 #Instalando uro
@@ -48,8 +50,7 @@ $p colorama $b
 $p sockets $b
 $p requests $b
 
-echo "
-[**Download do uro finalizado!**] "
+echo "[**Download do uro finalizado!**] "
 $c
 $p 
 # Clonando repositório NucleiFuzzer e executando instalação
