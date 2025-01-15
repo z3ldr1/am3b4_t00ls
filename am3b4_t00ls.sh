@@ -103,5 +103,5 @@ $c
 else
   echo "[**Download do site ignorado**]"
 fi
- $c
+
 echo "[**SCAN FINALIZADO**]. Obrigado por utilizar a Am3b4_t00ls!"
