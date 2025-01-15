@@ -1,13 +1,13 @@
 #!/bin/bash
-
+c="clear"
 echo " "
-echo "Atualizando arquivos..."
+echo "[**Atualizando arquivos...**]"
 sudo apt update -y && sudo apt full-upgrade -y
 echo " 
 [**Atualização completa**] 
-
+$c
 "
-echo "Baixando dependências do Ameba...
+echo "[**Baixando dependências do Ameba...**]
 
 "
 
@@ -25,11 +25,13 @@ sudo apt install -y \
   gobuster \
   python3 \
   wpscan \
+  msfconsole \
+  sherlock \
+  proxychains4 \
+  ettercap \
   wget \
   whois
-echo "
-
-"  
+$c
 
 #Instalando uro
 echo "Fazendo o donwload do uro."
@@ -38,6 +40,7 @@ echo "
 [**Download do uro finalizado!**]
 
 "
+$c
 # Clonando repositório NucleiFuzzer e executando instalação
 if [ ! -d "NucleiFuzzer" ]; then
   sudo git clone https://github.com/0xKayala/NucleiFuzzer.git
@@ -56,6 +59,4 @@ echo "[**Dependências baixadas com sucesso**]"
 echo "
  
 "
-echo "Atualizando pacotes adicionais..."
-sudo apt-get update -y && sudo apt-get full-upgrade -y
 echo "[**A atualização foi concluída com sucesso**]"
