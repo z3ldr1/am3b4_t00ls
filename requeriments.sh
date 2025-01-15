@@ -38,6 +38,11 @@ $i wordlists -y
 $i set -y
 $i httpx -y
 $i pipx -y
+$i systemctl -y
+$i postgresql -y
+$i apache2 -y
+$i tor -y
+
 
 $c
 
