@@ -16,7 +16,6 @@ echo "[**Baixando dependências do Ameba...**]
 
 # Instalação de pacotes
 sudo apt install -y \
-  python3-pip \
   python2 \
   python3 \
   git \
