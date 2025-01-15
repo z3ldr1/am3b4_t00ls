@@ -6,6 +6,7 @@ p="sudo pip3 install"
 up="sudo apt-get update -y && sudo apt-get full-upgrade -y"
 b="--break-system-package"
 
+
 echo "[**Atualizando arquivos...**]"
 $up
 echo "[**Atualização completa**] "
@@ -29,7 +30,7 @@ $i gobuster -y
 $i wpscan -y 
 $i sherlock -y 
 $i proxychains4 -y 
-$i ettercap -y 
+$i ettercap-text-only -y 
 $i wget -y 
 $i whois -y
 $i veil -y
@@ -42,7 +43,7 @@ $i systemctl -y
 $i postgresql -y
 $i apache2 -y
 $i tor -y
-
+$i veil -y
 
 $c
 
@@ -65,7 +66,7 @@ if [ ! -d "NucleiFuzzer" ]; then
   sudo chmod +x install.sh && ./install.sh
   cd ..
 else
-  echo "[**Repositório NucleiFuzzer já clonado.**]"
+  echo "[**Repositório NucleiFuzzer já clonado e pronto para funcionar!**]"
 fi
 $c
 echo "[**Dependências baixadas com sucesso**]"
