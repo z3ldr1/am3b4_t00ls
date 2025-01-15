@@ -2,7 +2,7 @@
 
 echo " "
 echo "Atualizando arquivos..."
-sudo apt update -y && sudo apt upgrade -y
+sudo apt update -y && sudo apt full-upgrade -y
 echo " 
 [**Atualização completa**] 
 
