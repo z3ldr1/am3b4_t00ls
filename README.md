@@ -8,7 +8,7 @@
 <span>
 Ameba is a creation of a solution of mine for bug bounty, it is an automation tool when you don't have much time to do a bug bounty, or are having time constraints, am3b4 was developed with the best bug bounty tools to use, the strings of the tools can also be modified, but of course it is already predefined.... </span> </br> </br>
 
-### How do I use this tool? 
+
 
 
 
@@ -40,18 +40,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Contact the Developer:**
 - **Telegram:** [@Z3ldr1s](https://t.me/@Z3ldr1s)
 - **Discord:** zeldr1s_prime
-- 
-Ameba e uma criação de uma solução minha para bug bounty, ela e uma ferramenta de automatização quando voce estiver sem muito tempo para fazer um bug bounty, ou tendo contra tempos, a am3b4 foi desenvolvida com as melhores ferramentas de bug bounty para se utilizar as strings das tools podem ser modificadas também, mas claro ja vem prédefinido.... 
 
-USO APENAS PARA O KALI-LINUX!!
 
-Modo de instalação:
 
+### How do I use this tool? 
+```
 $sudo su
 
-#git clone https://github.com/AlbedoPrime/am3b4_t00ls.git && cd am3b4_t00ls && chmod +x requeriments.sh && chmod +x am3b4_t00ls.sh && ./requeriments.sh && ./am3b4_t00ls.sh
+#git clone https://github.com/AlbedoPrime/am3b4_t00ls.git && cd am3b4_t00ls &&
+```
+```
+chmod +x requeriments.sh && chmod +x 
+```
+```
+am3b4_t00ls.sh && ./requeriments.sh && ./am3b4_t00ls.sh
+```
 
-Modo de uso:
-$ sudo su
 
-#./am3b4_t00ls.sh
