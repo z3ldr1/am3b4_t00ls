@@ -1,7 +1,5 @@
 # am3b4_t00ls
 
-# 
-
 <p align='center'>
 <img src="./.jpg" width=200 alt=" Logo"/>
 </p>
@@ -44,10 +42,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 ### How do I use this tool? 
-```
-$sudo su
 
-#git clone https://github.com/AlbedoPrime/am3b4_t00ls.git && cd am3b4_t00ls &&
+```
+sudo su
+```
+```
+git clone https://github.com/AlbedoPrime/am3b4_t00ls.git && cd am3b4_t00ls &&
 ```
 ```
 chmod +x requeriments.sh && chmod +x 
@@ -55,5 +55,4 @@ chmod +x requeriments.sh && chmod +x
 ```
 am3b4_t00ls.sh && ./requeriments.sh && ./am3b4_t00ls.sh
 ```
-
 
